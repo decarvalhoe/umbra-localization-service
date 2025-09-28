@@ -49,6 +49,9 @@ make format
 ### Endpoints
 
 - `GET /health` - Vérification de santé du service
+- `GET /locales` - Liste des locales disponibles
+- `GET /translations/<locale>` - Toutes les traductions pour une locale
+- `GET /translations/<locale>/<key>` - Traduction spécifique pour une clé
 
 ### Format des Réponses
 
@@ -61,6 +64,9 @@ make format
   "meta": null
 }
 ```
+
+Les locales et traductions sont chargées depuis `data/translations.json`,
+ce qui permet de les maintenir facilement dans le dépôt.
 
 ## 🔧 Développement
 
